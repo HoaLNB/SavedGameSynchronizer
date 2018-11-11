@@ -1,0 +1,43 @@
+﻿<Window x:Class="SavedGameSynchronizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SavedGameSynchronizer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="5" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid Name="GridMainNavButton"  Row="0" Visibility="Visible" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button Name="BtnMainNavRegisterPC" Width="100" Height="30" Content="PC" Click="Btn_MainDock_RegisterPC_Click" ></Button>
+                <Button Name="BtnMainNavGame" Width="100" Height="30" Content="PC"></Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Row="0" Visibility="Hidden">
+            <Button MaxWidth="100" Height="30" Content="Register PC"></Button>
+        </Grid>
+
+        <Grid Row="1" Name="GridMainTitle">
+            <Label Height="40" Name="LabelMainTitle" FontSize="20" Content=""></Label>
+        </Grid>
+
+        <Grid Name="GridMainFrame" Grid.Row="2" Margin="2">
+            <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
+                <Frame Name="FrameMain">
+
+                </Frame>
+            </Border>
+        </Grid>
+
+    </Grid>
+</Window>
