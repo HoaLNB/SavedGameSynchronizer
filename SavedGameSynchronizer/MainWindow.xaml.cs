@@ -9,6 +9,7 @@ namespace SavedGameSynchronizer
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string currentPage;
         public MainWindow()
         {
             InitializeComponent();
@@ -19,6 +20,11 @@ namespace SavedGameSynchronizer
             RegisterPc pageToShow = new RegisterPc();
             FrameMain.Navigate(pageToShow);
             LabelMainTitle.Content = pageToShow.PageTitle;
+        }
+
+        private void switchToPage(string destPage)
+        {
+            
         }
     }
 }
