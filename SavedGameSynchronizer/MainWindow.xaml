@@ -19,7 +19,7 @@
         <Grid Name="GridMainNavButton"  Row="0" Visibility="Visible" HorizontalAlignment="Left">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                 <Button Name="BtnMainNavRegisterPC" Width="100" Height="30" Content="PC" Click="Btn_MainDock_RegisterPC_Click" Margin="2"></Button>
-                <Button Name="BtnMainNavGame" Width="100" Height="30" Content="Game" Margin="2"></Button>
+                <Button Name="BtnMainNavGame" Width="100" Height="30" Content="Game" Margin="2" Click="BtnMainNavGame_Click"></Button>
             </StackPanel>
         </Grid>
 

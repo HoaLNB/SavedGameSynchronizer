@@ -17,5 +17,8 @@ namespace SavedGameSynchronizer.common
         //Register/Update PC Form Mode
         public const string MODE_PCFORM_REGISTER = "Register PC";
         public const string MODE_PCFORM_UPDATE = "Update PC";
+
+        public const string SWITCH_MAINFORM_PC = "toPC";
+        public const string SWITCH_MAINFORM_GAME = "toGame";
     }
 }
